@@ -24,50 +24,50 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 
 <style>
-  :root {
-    --background: #101418;
-    --card: rgba(255, 255, 255, 0.06);
-    --gold: #d4af37;
-    --gold-light: #e7c766;
-    --text: #f8f8f8;
-    --muted: #b7b7b7;
-    --border: rgba(212, 175, 55, 0.35);
-  }
+:root {
+--background: #101418;
+--card: rgba(255, 255, 255, 0.06);
+--gold: #d4af37;
+--gold-light: #e7c766;
+--text: #f8f8f8;
+--muted: #b7b7b7;
+--border: rgba(212, 175, 55, 0.35);
+}
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background:
-      radial-gradient(circle at top, rgba(212, 175, 55, 0.16), transparent 34%),
-      linear-gradient(180deg, #151a20 0%, var(--background) 55%, #080a0c 100%);
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 28px;
-  }
+body {
+margin: 0;
+min-height: 100vh;
+font-family: Arial, Helvetica, sans-serif;
+background:
+  radial-gradient(circle at top, rgba(212, 175, 55, 0.16), transparent 34%),
+  linear-gradient(180deg, #151a20 0%, var(--background) 55%, #080a0c 100%);
+color: var(--text);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 28px;
+}
 
-  main {
-    width: 100%;
-    max-width: 560px;
-    text-align: center;
-  }
+main {
+width: 100%;
+max-width: 560px;
+text-align: center;
+}
 
-  .brand-card {
-    border: 1px solid var(--border);
-    background: var(--card);
-    border-radius: 28px;
-    padding: 36px 24px 28px;
-    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(10px);
-  }
+.brand-card {
+border: 1px solid var(--border);
+background: var(--card);
+border-radius: 28px;
+padding: 36px 24px 28px;
+box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+backdrop-filter: blur(10px);
+}
 
-  .logo {
+.logo {
 width: 128px;
 height: 128px;
 object-fit: cover;
@@ -77,164 +77,182 @@ box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
 border: 1px solid var(--border);
 }
 
-  .eyebrow {
-    color: var(--gold-light);
-    letter-spacing: 0.22em;
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
+.eyebrow {
+color: var(--gold-light);
+letter-spacing: 0.22em;
+font-size: 0.78rem;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 12px;
+}
 
-  h1 {
-    margin: 0;
-    font-size: clamp(3rem, 12vw, 5.7rem);
-    line-height: 0.88;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
+h1 {
+margin: 0;
+font-size: clamp(3rem, 12vw, 5.7rem);
+line-height: 0.88;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
 
-  .gold-script {
-    color: var(--gold);
-    display: block;
-    font-style: italic;
-    letter-spacing: 0.01em;
-  }
+.gold-script {
+color: var(--gold);
+display: block;
+font-style: italic;
+letter-spacing: 0.01em;
+}
 
-  .tagline {
-    margin: 22px auto 12px;
-    font-size: 1.25rem;
-    line-height: 1.4;
-    font-weight: 700;
-    color: var(--gold-light);
-  }
+.tagline {
+margin: 22px auto 12px;
+font-size: 1.25rem;
+line-height: 1.4;
+font-weight: 700;
+color: var(--gold-light);
+}
 
-  .description {
-    margin: 0 auto 24px;
-    color: var(--muted);
-    line-height: 1.6;
-    max-width: 480px;
-    font-size: 1rem;
-  }
+.description {
+margin: 0 auto 24px;
+color: var(--muted);
+line-height: 1.6;
+max-width: 480px;
+font-size: 1rem;
+}
 
-  .moments {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 24px 0;
-  }
+.moments {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+margin: 24px 0;
+}
 
-  .moment {
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 999px;
-    padding: 8px 12px;
-    color: var(--text);
-    font-size: 0.9rem;
-    background: rgba(255, 255, 255, 0.04);
-  }
+.moment {
+border: 1px solid rgba(255, 255, 255, 0.14);
+border-radius: 999px;
+padding: 8px 12px;
+color: var(--text);
+font-size: 0.9rem;
+background: rgba(255, 255, 255, 0.04);
+}
 
-  .links {
-    display: grid;
-    gap: 12px;
-    margin-top: 26px;
-  }
+.links {
+display: grid;
+gap: 12px;
+margin-top: 26px;
+}
 
-  a.button {
-    display: block;
-    text-decoration: none;
-    color: #111;
-    background: var(--gold);
-    padding: 15px 18px;
-    border-radius: 16px;
-    font-weight: 800;
-    font-size: 1rem;
-    transition: transform 0.15s ease, background 0.15s ease;
-  }
+a.button {
+display: block;
+text-decoration: none;
+color: #111;
+background: var(--gold);
+padding: 15px 18px;
+border-radius: 16px;
+font-weight: 800;
+font-size: 1rem;
+transition: transform 0.15s ease, background 0.15s ease;
+}
 
-  a.button:hover {
-    transform: translateY(-2px);
-    background: var(--gold-light);
-  }
+a.button:hover {
+transform: translateY(-2px);
+background: var(--gold-light);
+}
 
-  a.button.secondary {
-    color: var(--text);
-    background: transparent;
-    border: 1px solid var(--border);
-  }
+a.button.secondary {
+color: var(--text);
+background: transparent;
+border: 1px solid var(--border);
+}
+.social-links {
+margin-top: 18px;
+color: var(--muted);
+font-size: 0.95rem;
+}
 
-  footer {
-    margin-top: 22px;
-    color: var(--muted);
-    font-size: 0.86rem;
-  }
+.social-links a {
+color: var(--gold-light);
+text-decoration: none;
+font-weight: 700;
+}
 
-  @media (max-width: 420px) {
-    body {
-      padding: 18px;
-    }
+.social-links a:hover {
+text-decoration: underline;
+}
 
-    .brand-card {
-      padding: 30px 18px 24px;
-      border-radius: 24px;
-    }
+footer {
+margin-top: 22px;
+color: var(--muted);
+font-size: 0.86rem;
+}
 
-    .tagline {
-      font-size: 1.1rem;
-    }
-  }
+@media (max-width: 420px) {
+body {
+  padding: 18px;
+}
+
+.brand-card {
+  padding: 30px 18px 24px;
+  border-radius: 24px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+}
+}
 </style>
 </head>
 
 <body>
 <main>
-  <section class="brand-card">
-    <img class="logo" src="/assets/logo.png" alt="The Family Shuffle logo" />
-    <div class="eyebrow">The</div>
+<section class="brand-card">
+<img class="logo" src="/assets/logo.png" alt="The Family Shuffle logo" />
+<div class="eyebrow">The</div>
 
-    <h1>
-      Family
-      <span class="gold-script">Shuffle</span>
-    </h1>
+<h1>
+  Family
+  <span class="gold-script">Shuffle</span>
+</h1>
 
-    <p class="tagline">Music everyone can leave on shuffle.</p>
+<p class="tagline">Music everyone can leave on shuffle.</p>
 
-    <p class="description">
-      A playlist built for road trips, cookouts, holidays, birthdays, and everyday moments.
-      Timeless R&amp;B, Soul, Funk, Pop, Afrobeats, and Hip-Hop curated for smooth shuffle flow
-      and broad family appeal.
-    </p>
+<p class="description">
+  A playlist built for road trips, cookouts, holidays, birthdays, and everyday moments.
+  Timeless R&amp;B, Soul, Funk, Pop, Afrobeats, and Hip-Hop curated for smooth shuffle flow
+  and broad family appeal.
+</p>
 
-    <div class="moments">
-      <span class="moment">🚗 Road Trips</span>
-      <span class="moment">🍔 Cookouts</span>
-      <span class="moment">🎉 Family Gatherings</span>
-      <span class="moment">🎂 Birthdays</span>
-      <span class="moment">✨ Everyday Moments</span>
-    </div>
+<div class="moments">
+  <span class="moment">🚗 Road Trips</span>
+  <span class="moment">🍔 Cookouts</span>
+  <span class="moment">🎉 Family Gatherings</span>
+  <span class="moment">🎂 Birthdays</span>
+  <span class="moment">✨ Everyday Moments</span>
+</div>
 
-    <div class="links">
-      <a class="button" href="https://music.apple.com/us/playlist/the-family-shuffle/pl.u-mJy81qJTBak5X9">
-        Listen on Apple Music
-      </a>
+<div class="links">
+  <a class="button" href="https://music.apple.com/us/playlist/the-family-shuffle/pl.u-mJy81qJTBak5X9" target="_blank" rel="noopener noreferrer">
+Listen on Apple Music
+</a>
 
-      <a class="button" href="https://open.spotify.com/playlist/11xrBXFJfso6kejoUFKc6F">
-        Listen on Spotify
-      </a>
+<a class="button" href="https://open.spotify.com/playlist/11xrBXFJfso6kejoUFKc6F" target="_blank" rel="noopener noreferrer">
+Listen on Spotify
+</a>
 
-      <a class="button secondary" href="https://www.instagram.com/thefamilyshufflemusic">
-        Follow on Instagram
-      </a>
+  <div class="social-links">
+<span>Follow along:</span>
+<a href="https://www.instagram.com/thefamilyshufflemusic" target="_blank" rel="noopener noreferrer">
+Instagram
+</a>
+<span>•</span>
+<a href="https://www.facebook.com/profile.php?id=61591604094827" target="_blank" rel="noopener noreferrer">
+Facebook
+</a>
+</div>
+</div>
+</section>
 
-      <a class="button secondary" href="https://www.facebook.com/profile.php?id=61591604094827">
-        Follow on Facebook
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    Curated with intention. © 2026 The Family Shuffle.
-  </footer>
+<footer>
+Curated with intention. © 2026 The Family Shuffle.
+</footer>
 </main>
 </body>
 </html>
